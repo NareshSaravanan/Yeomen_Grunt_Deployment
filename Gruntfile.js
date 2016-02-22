@@ -7,7 +7,6 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 var pkg = require('./package.json');
-
 module.exports = function (grunt) {
 
   // Load grunt tasks automatically
@@ -189,14 +188,14 @@ module.exports = function (grunt) {
         fileTypes:{
           js: {
             block: /(([\s\t]*)\/{2}\s*?bower:\s*?(\S*))(\n|\r|.)*?(\/{2}\s*endbower)/gi,
-              detect: {
-                js: /'(.*\.js)'/gi
-              },
-              replace: {
-                js: '\'{{filePath}}\','
-              }
+            detect: {
+              js: /'(.*\.js)'/gi
+            },
+            replace: {
+              js: '\'{{filePath}}\','
             }
           }
+        }
       }
     },
 
@@ -380,13 +379,6 @@ module.exports = function (grunt) {
         'svgmin'
       ]
     },
-    // Test settings
-    karma: {
-      unit: {
-        configFile: 'test/karma.conf.js',
-        singleRun: true
-      }
-    },
     buildcontrol: {
       options: {
         dir: 'dist',
@@ -396,7 +388,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:NareshSaravanan/Yeomen_Grunt_Deployment.git',
+          remote: 'git@github.com:nareshsaravanan/Yeomen_Grunt_Deployment.git',
           branch: 'gh-pages'
         }
       },
@@ -412,6 +404,13 @@ module.exports = function (grunt) {
           remote: '../',
           branch: 'build'
         }
+      }
+    },
+    // Test settings
+    karma: {
+      unit: {
+        configFile: 'test/karma.conf.js',
+        singleRun: true
       }
     }
   });

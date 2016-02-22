@@ -33,7 +33,7 @@ angular
         controller: 'DemoCtrl',
         resolve:{
           getvoyagedata : function(serviceCall){
-          return serviceCall.get('//localhost:11411/DotNet');
+          return serviceCall.get('//demoappchinanavigation.us-west-2.elasticbeanstalk.com//DotNet');
           },
           getCurrencList : function(serviceCall){
             return serviceCall.get('//localhost:9000/data/currencyList.json');
