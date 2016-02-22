@@ -1,0 +1,47 @@
+{
+  "vessel": "FA",
+  "name": "PACIFIC FAITHFUL",
+  "nationality": "LIBERIA",
+  "voyage": "0009",
+  "leg": "N",
+  "line": "SWI",
+  "consolidationline": "",
+  "consortsailingno": "9",
+  "master": "VP 12 DECEMEBER HGH",
+  "trade": "USW",
+  "service": "USW",
+  "weight": "KG",
+  "statisticsPeriod": "31 MARCH 2007",
+  "currency": "USD",
+  "mot": "S",
+  "measure": "M3",
+  "temp": "C",
+  "vesselPlan": "",
+  "publish": "",
+  "loadingDateBasis": "",
+  "user": "",
+  "portDetails": {
+    "port": "AUBNE",
+    "seq": 1,
+    "lcc": "BNS",
+    "currency": [{
+      "Currency": "AUD",
+      "ExchangeRate": 1.2694000
+    }, {
+      "Currency": "CAD",
+      "ExchangeRate": 1.1739500
+    }, {
+      "Currency": "EUR",
+      "ExchangeRate": 0.7723500
+    }, {
+      "Currency": "FJD",
+      "ExchangeRate": 1.1667500
+    }, {
+      "Currency": "GBP",
+      "ExchangeRate": 0.55072000
+    }, {
+      "Currency": "HKD",
+      "ExchangeRate": 7.80758900
+    }]
+  }
+}

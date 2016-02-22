@@ -1,0 +1,58 @@
+<div class="row">
+<uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+  <uib-slide ng-repeat="slide in slides" active="slide.active" index="slide.id">
+    <img ng-src="{{slide.image}}" style="margin:auto;">
+    <div class="carousel-caption">
+      <h4>Slide {{slide.id}}</h4>
+      <p>{{slide.text}}</p>
+    </div>
+  </uib-slide>
+</uib-carousel>
+</div>
+<div class="row">
+  <div class="col-lg-2">
+    TEST
+
+  </div>
+</div>
+<!--<div>
+<div class="row row-margin-bottom">
+  <div class="col-md-5 no-padding lib-item" data-category="view">
+    <div class="lib-panel">
+      <div class="row box-shadow">
+        <div class="col-md-6">
+          <img class="lib-img-show" src="http://www.swireshipping.com/images/stories/front/home_page/sw.jpg">
+        </div>
+        <div class="col-md-6">
+          <div class="lib-row lib-header">
+            Swire Shipping
+            <div class="lib-header-seperator"></div>
+          </div>
+          <div class="lib-row lib-desc">
+            Swire Shipping is the brand name for all liner shipping services operated by The China Navigation Company Pte Ltd (CNCo). We have provided niche, regional, multipurpose shipping services since 1883 when CNCo established liner services in Australasia. From our traditional core trading area, the Asia - South Pacific region, we offer shipping links between over 130 ports in Asia, the Pacific Islands, Australia, New Zealand, North America, Europe, the Middle East and the Indian Sub Continent.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="col-md-5 no-padding lib-item" data-category="ui">
+    <div class="lib-panel">
+      <div class="row box-shadow">
+        <div class="col-md-6">
+          <img class="lib-img" src="http://www.swireshipping.com/images/stories/front/home_page/sb.jpg">
+        </div>
+        <div class="col-md-6">
+          <div class="lib-row lib-header">
+            Swire Bulk
+            <div class="lib-header-seperator"></div>
+          </div>
+          <div class="lib-row lib-desc">
+            CNCo bulk division (Swire Bulk) runs a balanced fleet of owned and long term chartered tonnage with an initial focus on the handysize segment. The company aims to create value from the competitive advantage which modern, fuel efficient ship design affords, focusing on the development of long term relationships with cargo charterers and industrial shippers who ascribe value to sustainable shipping, and with whom the economic and environmental advantages can be shared.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>-->
