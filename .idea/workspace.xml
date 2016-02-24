@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6e0af0e-d86d-4c75-8823-ebe1db2e16c9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/demoController.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/demoController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/demo.html" afterPath="$PROJECT_DIR$/app/views/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
     </list>
     <ignored path="DemoInAngularJS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,13 +74,90 @@
       <file leaf-file-name="demo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43681747">
-              <caret line="181" column="32" selection-start-line="181" selection-start-column="32" selection-end-line="181" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.05304212">
+              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tabset#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab#0;n#uib-tabset#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab#1;n#uib-tabset#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab-heading#0;n#uib-tab#1;n#uib-tabset#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab#2;n#uib-tabset#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab-heading#0;n#uib-tab#2;n#uib-tabset#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#div#1;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#div#1;n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#div#2;n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#p#0;n#div#0;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#span#0;n#p#0;n#div#0;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#div#2;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#span#0;n#div#0;n#div#0;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#div#3;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-accordion-group#0;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-accordion-heading#0;n#uib-accordion-group#0;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-accordion-heading#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab#0;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab-heading#0;n#uib-tab#0;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab#1;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab-heading#0;n#uib-tab#1;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab#2;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab-heading#0;n#uib-tab#2;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab#3;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-tab-heading#0;n#uib-tab#3;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-accordion-group#2;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#uib-accordion-heading#0;n#uib-accordion-group#2;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -766,13 +836,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43681747">
-          <caret line="181" column="32" selection-start-line="181" selection-start-column="32" selection-end-line="181" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.05304212">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tabset#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab#0;n#uib-tabset#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab#1;n#uib-tabset#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab-heading#0;n#uib-tab#1;n#uib-tabset#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab#2;n#uib-tabset#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab-heading#0;n#uib-tab#2;n#uib-tabset#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#div#1;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#div#1;n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#div#2;n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#2;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#p#0;n#div#0;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#p#0;n#div#0;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#div#2;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#3;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#0;n#div#0;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#div#3;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#4;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-accordion-group#0;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-accordion-heading#0;n#uib-accordion-group#0;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-accordion-heading#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab#0;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab-heading#0;n#uib-tab#0;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab#1;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab-heading#0;n#uib-tab#1;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab#2;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab-heading#0;n#uib-tab#2;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab#3;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-tab-heading#0;n#uib-tab#3;n#uib-tabset#0;n#uib-accordion-group#1;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-accordion-group#2;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#uib-accordion-heading#0;n#uib-accordion-group#2;n#uib-accordion#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
