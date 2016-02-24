@@ -61,4 +61,65 @@ angular.module('demoInAngularJsApp')
       $scope.popup1.opened = true;
     };
 
+
+      $scope.gridheader = [
+        {headerName: "Cargo Type", field: "crgtype"},
+        {headerName: "Cargo Type Description", field: "crgtypedesc"},
+        {headerName: "Unit Size", field: "unitsize"}
+      ];
+      $scope.rowData = [
+        {crgtype: "20BK", crgtypedesc: "Cargo Type Desc", unitsize: 20},
+        {crgtype: "PLT", crgtypedesc: "PALLET", unitsize: 0},
+        {crgtype: "TPK", crgtypedesc: "TIMBERPACK", unitsize: 0},
+        {crgtype: "20BO", crgtypedesc: "20' BOLSTER/S", unitsize: 20},
+        {crgtype: "40DY", crgtypedesc: "40' DRY CONTAINER", unitsize: 40},
+        {crgtype: "20FA", crgtypedesc: "20' FAN TAINER/S", unitsize: 20}
+      ];
+
+
+
+
+      $scope.gridOptionsAutoComplete = {
+        columnDefs: $scope.gridheader,
+        rowData: $scope.rowData,
+        onSelectionChanged: onSelectionChanged,
+        rowSelection: 'single',
+        enableColResize: true,
+        enableSorting: true,
+        enableFilter: true,
+        groupHeaders: true,
+        rowHeight: 22,
+        onModelUpdated: onModelUpdated,
+        suppressRowClickSelection: false
+
+
+      };
+
+      function onModelUpdated() {
+        var model = $scope.gridOptionsAutoComplete.api.getModel();
+        var totalRows = $scope.gridOptionsAutoComplete.rowData.length;
+        var processedRows = model.getVirtualRowCount();
+        $scope.rowCount = processedRows.toLocaleString() + ' / ' + totalRows.toLocaleString();
+      }
+
+      function onSelectionChanged() {
+        var selectedRows = $scope.gridOptionsAutoComplete.api.getSelectedRows();
+        var selectedRowsString = '';
+        selectedRows.forEach( function(selectedRow, index) {
+          if (index!=0) {
+            selectedRowsString += ', ';
+          }
+          selectedRowsString += selectedRow.crgtype;
+        });
+        $scope.gridOptionsAutoComplete.quickFilterText = selectedRowsString;
+        document.querySelector('#selectedRows').innerHTML = selectedRowsString;
+        document.getElementById('myGrid').style.display='none'
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var gridDiv = document.querySelector('#myGrid');
+
+      });
+
+
   });

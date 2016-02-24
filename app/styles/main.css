@@ -290,6 +290,6 @@ select{
 }
 
 .loading-spinner{
-  height: 100px;
-  width: 200px;
+  background-color: #2e3192 !important;
+  color: white;
 }

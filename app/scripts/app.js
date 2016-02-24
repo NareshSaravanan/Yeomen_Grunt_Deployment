@@ -8,6 +8,20 @@
  *
  * Main module of the application.
  */
+
+agGrid.initialiseAgGridWithAngular1(angular);
+function showGrid(val)
+{
+  console.log(val.length)
+  if(val.length <0){
+    document.getElementById('myGrid').style.display='none'
+  }
+  else
+  {
+    console.log("hide count")
+    document.getElementById('myGrid').style.display='block'
+  }
+}
 angular
   .module('demoInAngularJsApp', [
     'ngAnimate',
@@ -15,7 +29,7 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
+    'ngTouch','agGrid',
     'ui.bootstrap','ui.grid', 'ui.grid.cellNav', 'ui.grid.edit', 'ui.grid.resizeColumns', 'ui.grid.pinning', 'ui.grid.selection', 'ui.grid.moveColumns', 'ui.grid.exporter', 'ui.grid.importer', 'ui.grid.grouping'
   ])
   .config(function ($routeProvider) {
@@ -36,7 +50,7 @@ angular
           return serviceCall.get('//demoappchinanavigation.us-west-2.elasticbeanstalk.com//DotNet');
           },
           getCurrencList : function(serviceCall){
-            return serviceCall.get('//localhost:9000/data/currencyList.json');
+            return serviceCall.get('//raw.githubusercontent.com/NareshSaravanan/Yeomen_Grunt_Deployment/master/app/data/currencyList.json');
           }
         }
       })
