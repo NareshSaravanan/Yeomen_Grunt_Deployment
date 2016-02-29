@@ -47,7 +47,7 @@ angular.module('demoInAngularJsApp')
       {name:"ExchangeRate",enableCellEdit: true}
     ];
     $scope.gridOptions1.columnDefs = [
-      { name: 'Actions', cellTemplate: '<div class="ui-grid-cell-contents"><a class="glyphicon glyphicon-pencil"  ng-click="grid.appScope.edit(row)"></a></div>' },
+      { name: 'Actions', cellTemplate: '<div class="ui-grid-cell-contents"><a class="glyphicon glyphicon-pencil" style="cursor:pointer"  ng-click="grid.appScope.edit(row)"></a></div>' },
       {name:"vessel"},
       {name:"voyage"},
       {name:"currency", cellFilter: 'mapGender'},
@@ -101,7 +101,7 @@ angular.module('demoInAngularJsApp')
       {crgtype: "TPK", crgtypedesc: "TIMBERPACK", unitsize: 0},
       {crgtype: "20BO", crgtypedesc: "20' BOLSTER/S", unitsize: 20},
       {crgtype: "40DY", crgtypedesc: "40' DRY CONTAINER", unitsize: 40},
-      {crgtype: "20FA", crgtypedesc: "20' FAN TAINER/S", unitsize: 20}
+        {crgtype: "20FA", crgtypedesc: "20' FAN TAINER/S", unitsize: 20}
     ];
 
 
@@ -140,7 +140,7 @@ angular.module('demoInAngularJsApp')
         selectedRowsString += selectedRow.crgtype + ' - ' + selectedRow.crgtypedesc + ' - ' + selectedRow.unitsize;
       });
       $scope.gridOptionsAutoComplete.quickFilterText = selectedRowsString;
-      document.querySelector('#selectedRows').innerHTML = selectedRowsString;
+      //document.querySelector('#selectedRows').innerHTML = selectedRowsString;
       document.getElementById('myGrid').style.display='none'
     }
 
