@@ -2,7 +2,7 @@
 
 
 angular.module('demoInAngularJsApp')
-  .controller('DemoCtrl', function ($scope,getvoyagedata,getCurrencList) {
+  .controller('DemoCtrl', function ($scope,getvoyagedata,getCurrencList,serviceCall) {
     $scope.tabs = [
       { title:'Selection',section:'selection' ,active:true},
       { title:'Registration',section:'registration'}
@@ -17,13 +17,19 @@ angular.module('demoInAngularJsApp')
       $scope.tabSection = section;
     };
     $scope.getCurrencList = getCurrencList;
-    $scope.voyagePlan  = getvoyagedata;
+    angular.forEach(getvoyagedata,function(data){
+      data.statisticsPeriod =   new Date(data.statisticsPeriod);
+    });
+    $scope.voyagePlan  = getvoyagedata[0];
     $scope.searchResults = [];
     $scope.searchbtnfn = function(){
-      $scope.searchResults.push($scope.voyagePlan);
-      $scope.gridOptions1.data = $scope.searchResults;
+      $scope.gridOptions1.data = [];
+      serviceCall.get('//localhost:11411/DotNet').then(function(data){
+        $scope.gridOptions1.data = data;
+
+      });
     };
-    $scope.voyagePlan.statisticsPeriod =   new Date($scope.voyagePlan.statisticsPeriod);
+
     $scope.gridOptions = {
       enableColumnResizing: true,
       enableSorting: true
@@ -32,17 +38,39 @@ angular.module('demoInAngularJsApp')
       enableColumnResizing: true,
       enableSorting: true
     };
+    $scope.gridOptions2 = {
+      enableColumnResizing: true,
+      enableSorting: true
+    };
     $scope.gridOptions.columnDefs = [
       {name:"Currency", enableCellEdit: true},
       {name:"ExchangeRate",enableCellEdit: true}
     ];
     $scope.gridOptions1.columnDefs = [
-      { name: 'Actions', cellTemplate: '<div class="ui-grid-cell-contents glyphicon glyphicon-pencil" ng-click="grid.appScope.edit(row)"></div>' },
+      { name: 'Actions', cellTemplate: '<div class="ui-grid-cell-contents"><a class="glyphicon glyphicon-pencil"  ng-click="grid.appScope.edit(row)"></a></div>' },
       {name:"vessel"},
       {name:"voyage"},
-      {name:"currency"},
+      {name:"currency", cellFilter: 'mapGender'},
       {name:"leg"}
     ];
+    $scope.gridOptions2.columnDefs = [
+      {name:"vessel"},
+      {name:"voyage"},
+      {name:"currency",editableCellTemplate: 'ui-grid/dropdownEditor', width: '20%',
+        cellFilter: 'mapGender',  editDropdownValueLabel: 'currency', editDropdownOptionsArray: [
+        { id: 1, currency: 'AUD' },
+        { id: 2, currency: 'CAD' },
+        { id: 3, currency: 'EUR' },
+        { id: 4, currency: 'FJD' },
+        { id: 5, currency: 'GBP' },
+        { id: 6, currency: 'HKD' }
+      ]},
+      {name:"leg"}
+    ];
+
+    $scope.voyageData = [];
+  //  $scope.voyageData.push($scope.voyagePlan);
+    $scope.gridOptions2.data = getvoyagedata;
     $scope.gridOptions.enableColumnResizing = true;
     $scope.gridOptions.enableFiltering = true;
     $scope.gridOptions.enableGridMenu = true;
@@ -62,64 +90,64 @@ angular.module('demoInAngularJsApp')
     };
 
 
-      $scope.gridheader = [
-        {headerName: "Cargo Type", field: "crgtype"},
-        {headerName: "Cargo Type Description", field: "crgtypedesc"},
-        {headerName: "Unit Size", field: "unitsize"}
-      ];
-      $scope.rowData = [
-        {crgtype: "20BK", crgtypedesc: "Cargo Type Desc", unitsize: 20},
-        {crgtype: "PLT", crgtypedesc: "PALLET", unitsize: 0},
-        {crgtype: "TPK", crgtypedesc: "TIMBERPACK", unitsize: 0},
-        {crgtype: "20BO", crgtypedesc: "20' BOLSTER/S", unitsize: 20},
-        {crgtype: "40DY", crgtypedesc: "40' DRY CONTAINER", unitsize: 40},
-        {crgtype: "20FA", crgtypedesc: "20' FAN TAINER/S", unitsize: 20}
-      ];
+    $scope.gridheader = [
+      {headerName: "Cargo Type", field: "crgtype"},
+      {headerName: "Cargo Type Description", field: "crgtypedesc"},
+      {headerName: "Unit Size", field: "unitsize"}
+    ];
+    $scope.rowData = [
+      {crgtype: "20BK", crgtypedesc: "Cargo Type Desc", unitsize: 20},
+      {crgtype: "PLT", crgtypedesc: "PALLET", unitsize: 0},
+      {crgtype: "TPK", crgtypedesc: "TIMBERPACK", unitsize: 0},
+      {crgtype: "20BO", crgtypedesc: "20' BOLSTER/S", unitsize: 20},
+      {crgtype: "40DY", crgtypedesc: "40' DRY CONTAINER", unitsize: 40},
+      {crgtype: "20FA", crgtypedesc: "20' FAN TAINER/S", unitsize: 20}
+    ];
 
 
 
 
-      $scope.gridOptionsAutoComplete = {
-        columnDefs: $scope.gridheader,
-        rowData: $scope.rowData,
-        onSelectionChanged: onSelectionChanged,
-        rowSelection: 'single',
-        enableColResize: true,
-        enableSorting: true,
-        enableFilter: true,
-        groupHeaders: true,
-        rowHeight: 22,
-        onModelUpdated: onModelUpdated,
-        suppressRowClickSelection: false
+    $scope.gridOptionsAutoComplete = {
+      columnDefs: $scope.gridheader,
+      rowData: $scope.rowData,
+      onSelectionChanged: onSelectionChanged,
+      rowSelection: 'single',
+      enableColResize: true,
+      enableSorting: true,
+      enableFilter: true,
+      groupHeaders: true,
+      rowHeight: 22,
+      onModelUpdated: onModelUpdated,
+      suppressRowClickSelection: false
 
 
-      };
+    };
 
-      function onModelUpdated() {
-        var model = $scope.gridOptionsAutoComplete.api.getModel();
-        var totalRows = $scope.gridOptionsAutoComplete.rowData.length;
-        var processedRows = model.getVirtualRowCount();
-        $scope.rowCount = processedRows.toLocaleString() + ' / ' + totalRows.toLocaleString();
-      }
+    function onModelUpdated() {
+      var model = $scope.gridOptionsAutoComplete.api.getModel();
+      var totalRows = $scope.gridOptionsAutoComplete.rowData.length;
+      var processedRows = model.getVirtualRowCount();
+      $scope.rowCount = processedRows.toLocaleString() + ' / ' + totalRows.toLocaleString();
+    }
 
-      function onSelectionChanged() {
-        var selectedRows = $scope.gridOptionsAutoComplete.api.getSelectedRows();
-        var selectedRowsString = '';
-        selectedRows.forEach( function(selectedRow, index) {
-          if (index!=0) {
-            selectedRowsString += ', ';
-          }
-          selectedRowsString += selectedRow.crgtype;
-        });
-        $scope.gridOptionsAutoComplete.quickFilterText = selectedRowsString;
-        document.querySelector('#selectedRows').innerHTML = selectedRowsString;
-        document.getElementById('myGrid').style.display='none'
-      }
-
-      document.addEventListener('DOMContentLoaded', function() {
-        var gridDiv = document.querySelector('#myGrid');
-
+    function onSelectionChanged() {
+      var selectedRows = $scope.gridOptionsAutoComplete.api.getSelectedRows();
+      var selectedRowsString = '';
+      selectedRows.forEach( function(selectedRow, index) {
+        if (index!=0) {
+          selectedRowsString += ', ';
+        }
+        selectedRowsString += selectedRow.crgtype + ' - ' + selectedRow.crgtypedesc + ' - ' + selectedRow.unitsize;
       });
+      $scope.gridOptionsAutoComplete.quickFilterText = selectedRowsString;
+      document.querySelector('#selectedRows').innerHTML = selectedRowsString;
+      document.getElementById('myGrid').style.display='none'
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var gridDiv = document.querySelector('#myGrid');
+
+    });
 
 
   });

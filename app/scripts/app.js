@@ -47,7 +47,8 @@ angular
         controller: 'DemoCtrl',
         resolve:{
           getvoyagedata : function(serviceCall){
-          return serviceCall.get('//demoappchinanavigation.us-west-2.elasticbeanstalk.com//DotNet');
+          //return serviceCall.get('//demoappchinanavigation.us-west-2.elasticbeanstalk.com//DotNet');
+          return serviceCall.get('//localhost:11411/DotNet');
           },
           getCurrencList : function(serviceCall){
             return serviceCall.get('//raw.githubusercontent.com/NareshSaravanan/Yeomen_Grunt_Deployment/master/app/data/currencyList.json');
@@ -57,6 +58,24 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  })
+
+  .filter('mapGender', function() {
+    var genderHash = {
+      1: 'AUD',
+      2: 'CAD',
+      3: 'EUR',
+      4: 'FJD',
+      5: 'GBP',
+      6: 'HKD'
+    };
+    return function(input) {
+      if (!input){
+        return '';
+      } else {
+        return genderHash[input];
+      }
+    };
   })
  .service('serviceCall', ['$rootScope','$http', '$q', function ($rootScope,$http, $q) {
    $rootScope.check = true;
