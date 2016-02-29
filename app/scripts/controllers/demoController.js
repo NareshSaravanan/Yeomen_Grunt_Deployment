@@ -24,7 +24,7 @@ angular.module('demoInAngularJsApp')
     $scope.searchResults = [];
     $scope.searchbtnfn = function(){
       $scope.gridOptions1.data = [];
-      serviceCall.get('//localhost:11411/DotNet').then(function(data){
+      serviceCall.get('//demoappchinanavigation.us-west-2.elasticbeanstalk.com//DotNet').then(function(data){
         $scope.gridOptions1.data = data;
 
       });

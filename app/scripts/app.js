@@ -47,8 +47,8 @@ angular
         controller: 'DemoCtrl',
         resolve:{
           getvoyagedata : function(serviceCall){
-          //return serviceCall.get('//demoappchinanavigation.us-west-2.elasticbeanstalk.com//DotNet');
-          return serviceCall.get('//localhost:11411/DotNet');
+          return serviceCall.get('//demoappchinanavigation.us-west-2.elasticbeanstalk.com//DotNet');
+         // return serviceCall.get('//localhost:11411/DotNet');
           },
           getCurrencList : function(serviceCall){
             return serviceCall.get('//raw.githubusercontent.com/NareshSaravanan/Yeomen_Grunt_Deployment/master/app/data/currencyList.json');
