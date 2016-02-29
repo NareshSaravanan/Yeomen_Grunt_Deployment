@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6e0af0e-d86d-4c75-8823-ebe1db2e16c9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/demoController.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/demoController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/demo.html" afterPath="$PROJECT_DIR$/app/views/demo.html" />
-    </list>
+    <list default="true" id="a6e0af0e-d86d-4c75-8823-ebe1db2e16c9" name="Default" comment="" />
     <ignored path="DemoInAngularJS.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
